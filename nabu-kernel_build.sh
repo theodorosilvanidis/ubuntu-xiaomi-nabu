@@ -1,4 +1,4 @@
-git clone https://github.com/theodorosilvanidis/sm8150-mainline --branch nabu-$1 --depth 1 linux
+git clone https://github.com/theodorosilvanidis/sm8150-mainline --branch nabu-6.7-working --depth 1 linux
 cd linux
 make -j$(nproc) ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu-
 _kernel_version="$(make kernelrelease -s)"
